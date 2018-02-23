@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
 
 
   s.add_dependency "rails", ">= 5.1.0", "<6"
-  s.add_dependency 'foundation-rails', ">=6.4"
+  s.add_dependency 'foundation-rails'
   s.add_dependency 'mysql2'
 
   s.add_development_dependency "coffee-rails"
