@@ -13,11 +13,13 @@ Gem::Specification.new do |s|
   s.summary     = "add the foundation datepicker as a gem"
   s.description = "add the foundation datepicker as a gem"
 
-  s.files       = `git ls-files -z`.split("\x0")
-  s.executables = s.files.grep(%r{^bin/}) { |f| File.basename(f) }
-  s.test_files  = s.files.grep(%r{^(test|spec|features)/})
+  s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
 
-  s.add_dependency "rails", ">= 4.1.0", "<6"
 
+  s.add_dependency "rails", ">= 5.1.0", "<6"
+  s.add_dependency 'foundation-rails', ">=6.4"
+  s.add_dependency 'mysql2'
+
+  s.add_development_dependency "coffee-rails"
 
 end

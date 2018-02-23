@@ -1,0 +1,2 @@
+$ ->
+	$(".myDate").fdatepicker()
